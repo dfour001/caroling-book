@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Goudy+Bookletter+1911&family=STIX+Two+Text&display=swap');
+
+/* Hide arrows in number input - Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrows in number input - Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+  color: #161411;
+  background-color: #E0C9A6;
+  overflow-y: hidden;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -28,11 +52,117 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.turnToPage {
+  background-color: pink;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.coverPage {
+  background-color: darkred;
+  color: white;
+}
+
+.demoPage {
+  background-color: #E0C9A6;
+}
+
+.bookContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.btnNext {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.btnPrev {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.title-hr {
+  max-width: 25%;
+}
+
+.coverPage-title {
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+.coverPage-title h1 {
+  margin: 0px;
+  letter-spacing: 0.1em;
+  font-family: 'STIX Two Text', serif;
+}
+.coverPage-title h3 {
+  margin: 0px;
+}
+.coverPage-title h5 {
+  margin: 0px;
+}
+
+.BookSpine {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 5%;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0) 100%);
+}
+
+.BookShadow {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3225490025111607) 100%);
+}
+.BookShadow-light {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%);
+  z-index: -1;
+}
+
+.STIX-Two-Text {
+  font-family: 'STIX Two Text', serif;
+}
+
+.monospace {
+  font-family: 'Courier Prime', monospace;
+}
+
+.TOC-header {
+  height: 25vh;
+}
+
+.TOC-Container {
+  
+  width: 100%;
+  height: 75vh;
+  overflow-y: auto;
+}
+
+.TOC {
+  margin-left: 4em;
+  margin-right: 4em;
 }

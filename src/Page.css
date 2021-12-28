@@ -1,0 +1,21 @@
+.page {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.pageNumber {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lyrics {
+    width: 100vw;
+    height: 75vh;
+    overflow-y: auto;
+}
+
+.lyrics p:last-child {
+    margin-bottom: 4em;
+}

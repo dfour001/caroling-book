@@ -1,0 +1,70 @@
+.PageFlip-btn {
+  position: fixed;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 100;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #8f7b60;
+  color: #8f7b60;
+  font-size: 2em;
+  background-color: #e0c9a6;
+  cursor: pointer;
+}
+
+.PageFlip-btnPrev {
+  left: 0px;
+  border-left: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.PageFlip-btnPrev p {
+  margin: 0px;
+  text-align: left;
+}
+
+.PageFlip-btnNext {
+  right: 0px;
+  border-right: 0px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.PageFlip-btnNext p {
+  margin: 0px;
+  text-align: right;
+  animation: animRight 3s linear 0s infinite;
+}
+
+@keyframes animRight {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    80% {
+        transform: translateX(0px);
+    }
+    90% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.PageFlip-OpenBook {
+  background: transparent;
+  right: 0px;
+  border-right: 0px;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+  width: auto;
+  font-size: 1em;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: white;
+}
+
+.PageFlip-OpenBook p {
+  margin: 0px;
+}
